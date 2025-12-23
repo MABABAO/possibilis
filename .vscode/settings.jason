@@ -1,0 +1,25 @@
+{
+  // VS Code settings for Possibilis project
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.renderWhitespace": "boundary",
+  "terminal.integrated.fontSize": 13,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html"
+  },
+  // Tailwind CSS support
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "html": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class\\s*=\\\"([^\\\"]*)\\\"", 1],
+    ["className\\s*=\\\"([^\\\"]*)\\\"", 1]
+  ]
+}

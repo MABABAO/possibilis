@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+Copyright © 2024 Marc Abelha
+All rights reserved. No part of this work may be reproduced without permission.
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Possibilis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="relative text-white font-sans">
+    <!-- Background image layer -->
+    <div class="absolute inset-0 z-0 min-h-screen">
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover object-top" alt="background" />
+    </div>
+
+    <!-- Foreground content layer -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4">
+      <!-- Header -->
+      <header class="text-center py-12 space-y-4">
+        <h1 class="text-6xl font-light text-blue-400 tracking-wide">Possibilis</h1>
+        <h2 class="text-2xl text-gray-300">What if the future was yours to shape? It is!</h2>
+        <p>Because YOUR actions, votes, silence—they built today. What you do next builds tomorrow.</p>
+        <p class="text-left text-gray-300 mt-6">Choose a Future to Explore.</p>
+      </header>
+
+      <!-- Tiles Section -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-10 mt-40">
+        <a href="episodes/fading.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>Population Crash</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">Fading</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">Birth rates crashed. Your pension's next.</p>
+          </div>
+        </a>
+
+        <a href="episodes/ayuda.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>Jobless Future</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">Ayuda</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">AI and robots are taking your job. What's your plan?</p>
+          </div>
+        </a>
+
+        <!-- Subtle Call to Action -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-3 text-center py-6">
+          <p class="text-gray-300 text-sm">
+            AI is a powerful tool for research, and Elon can access global databases that we cannot. 
+            Want to see these scenarios run at full xAI datacenter scale? 
+            <a href="https://x.com/elonmusk" class="text-blue-400 hover:text-blue-300 underline">Tag @elonmusk</a> 
+            with your vote on X.
+          </p>
+          <p class="text-gray-400 text-sm mt-2 italic">↓ Here's more ↓</p>
+        </div>
+
+        <a href="episodes/aufbruch.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>The Energy Lie</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">Aufbruch</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">Energy got cheaper. Where's my cheap milk and eggs?</p>
+          </div>
+        </a>
+
+        <a href="episodes/crispr.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>Genetic Revolution</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">CRISPR</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">Fix disease. Create superkids. But only if you can pay.</p>
+          </div>
+        </a>
+
+        <a href="episodes/tangping.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>House Problem</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">Tǎng Píng</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">Still can't afford rent? Maybe it's by design. So break it.</p>
+          </div>
+        </a>
+
+        <a href="episodes/supercapitalism.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>Work is Dead</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">SuperCapitalism</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">If robots create the wealth… who gets paid?</p>
+          </div>
+        </a>
+
+        <a href="episodes/mars.html" class="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer hover:shadow-2xl transition">
+          <div class="relative p-6 bg-gradient-to-br from-indigo-900/80 to-blue-800/80 h-full">
+            <span class="absolute top-3 left-3 text-xs text-gray-300 flex items-center space-x-1 animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 11-6.598 17.401" />
+              </svg>
+              <span>New Chance for Humanity?</span>
+            </span>
+            <h3 class="text-2xl font-semibold text-white">Mars</h3>
+            <p class="text-sm text-gray-300 mt-2 group-hover:text-white transition">Escape pod or reset button? Time's running out to decide.</p>
+          </div>
+        </a>
+      </section>
+
+      <footer class="text-center text-gray-400 text-xs py-6 max-w-4xl mx-auto border-t border-gray-800 mt-8">
+        <p><strong>Disclaimer:</strong> Possibilis presents scenarios for discussion and exploration. Content represents possible futures, not predictions or advice. Simulations are illustrative, not scientific forecasts. Consult qualified professionals for decisions affecting your life.</p>
+        <p class="mt-2">© 2024 Marc Abelha. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
