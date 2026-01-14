@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufbruch Campaign Card - Possibilis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+        
+        .card {
+            width: 1200px;
+            height: 630px;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        /* Subtle gradient overlays for text readability */
+        .overlay-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 180px;
+            background: linear-gradient(180deg, 
+                rgba(0,0,0,0.75) 0%, 
+                rgba(0,0,0,0.4) 50%,
+                transparent 100%);
+            z-index: 2;
+        }
+        
+        .overlay-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 140px;
+            background: linear-gradient(0deg, 
+                rgba(0,0,0,0.8) 0%, 
+                rgba(0,0,0,0.3) 60%,
+                transparent 100%);
+            z-index: 2;
+        }
+        
+        /* Content positioning */
+        .content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 50px;
+        }
+        
+        /* Top text - minimal */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .icon {
+            font-size: 48px;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.8));
+        }
+        
+        .title {
+            font-size: 52px;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 
+                0 2px 4px rgba(0,0,0,0.9),
+                0 4px 12px rgba(0,0,0,0.7);
+            letter-spacing: -0.5px;
+        }
+        
+        /* Center quote - the key message */
+        .center-quote {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 900px;
+            padding: 30px 40px;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        
+        .quote-text {
+            font-size: 38px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.3;
+            font-style: italic;
+            text-shadow: 
+                0 2px 6px rgba(0,0,0,0.9),
+                0 4px 16px rgba(0,0,0,0.8);
+            margin-bottom: 12px;
+        }
+        
+        .quote-subtext {
+            font-size: 20px;
+            color: #ffd700;
+            font-weight: 600;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+        }
+        
+        /* Bottom - minimal branding and CTA */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .data-point {
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 600;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+            background: rgba(0,0,0,0.5);
+            padding: 8px 16px;
+            border-radius: 6px;
+            backdrop-filter: blur(4px);
+        }
+        
+        .data-number {
+            font-size: 24px;
+            color: #ffd700;
+            font-weight: 800;
+        }
+        
+        .branding {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #ffd700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Background image -->
+        <img src="../assets/images/agrivoltaics.png" alt="Agrivoltaics" class="background-image">
+        
+        <!-- Subtle gradient overlays -->
+        <div class="overlay-top"></div>
+        <div class="overlay-bottom"></div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Top: Minimal title -->
+            <div class="header">
+                <div class="icon">⚡</div>
+                <div class="title">Aufbruch</div>
+            </div>
+            
+            <!-- Center: The key message -->
+            <div class="center-quote">
+                <div class="quote-text">
+                    "We already have fusion.<br>It rises every morning."
+                </div>
+                <div class="quote-subtext">
+                    The technology exists. Policy kills it.
+                </div>
+            </div>
+            
+            <!-- Bottom: Data + Branding -->
+            <div class="footer">
+                <div class="data-point">
+                    <span class="data-number">20-50%</span> water savings • Terawatt potential
+                </div>
+                <div class="branding">
+                    <div class="logo">POSSIBILIS</div>
+                    <div class="tagline">mababao.github.io/possibilis</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
